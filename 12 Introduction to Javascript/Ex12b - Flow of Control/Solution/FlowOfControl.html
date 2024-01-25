@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EX03 - Flow of Control</title>
+</head>
+<body>
+    <script>
+        //Part 1 - If else statement
+
+        let age = 18;
+
+        if (age <= 17) {
+            console.log("Underage");
+        } else {
+            console.log("Over 18");
+        }
+
+
+        //Part 2 - if elseif if statment
+
+        if (age <= 17) {
+            console.log("Underage");
+        }else if (age >=18 && age <=65){
+            console.log("Insurable");
+        } 
+        else {
+            console.log("out of range");
+        }
+
+        //Part 3 - if statment using or short circuit
+        let value;
+        if (value === undefined || value === null || value == ""){
+            console.log("value is mandatory");
+            console.log(value);
+        }
+
+        //Part 4 - for loops
+        let counter = 1;
+        for (var i = 1; i < 10; i++) {
+            console.log(i * 1);
+        }
+
+        //Part 5 - while loops
+        let counter2 = 2;
+        let loopCount = 0;
+        while (counter2 < 100) {
+            counter2 = counter2 * counter2;
+            loopCount++;
+            console.log("total : " +  counter2);
+            console.log("loopCount : " + loopCount);
+        }
+    </script>
+</body>
+</html>

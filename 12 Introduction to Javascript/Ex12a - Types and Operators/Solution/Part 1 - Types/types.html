@@ -1,0 +1,67 @@
+<!--
+    Instruction 3 - create a skeleton HTML page 
+    Use the Emmett abbrieviation ! followed by pressing the TAB key to quickly create a skeleton HTML page 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EX02 - Part 1 Types</title>
+</head>
+<body>
+    <!-- Instruction 4 - add a script tag -->
+    <script>
+        // Instruction 5
+        let numTest = 45.324568;
+        console.log(numTest);
+        // Instruction 6 - Save the file
+        // Instructions 7 & 8 - Open the Integrated Terminal and navigate to the Exercises folder
+        // Instruction 9 - live-server
+        // Instructions 10 & 11 - Performed in the browser - navigate to page and open browser console
+          
+        // Instruction 12 - use number method toFixed
+        let twoDecimalPoints = numTest.toFixed(2);
+        console.log(twoDecimalPoints);
+        // Instruction 13 - Performed in the browser
+
+        // Instruction 14 - use the toExponential number method 
+        let eightFigureExponential = numTest.toExponential(8);
+        console.log(eightFigureExponential);
+
+        // Strings
+        // Instruction 15 - stringTest and indexOf - lower m
+        let stringTest = "I am the very model of a modern major general";
+        let indexOfM = stringTest.indexOf("m");
+        console.log(indexOfM);
+        // Instruction 16 - Performed in the browser
+
+        // Instruction 17 - stringTest and indexOf - capital M
+        /*let*/ stringTest = "I am the very model of a modern major general";
+        /*let*/ indexOfM = stringTest.indexOf("M");
+        console.log(indexOfM);
+
+        // Instruction 18 - stringTest, toUpperCase and indexOf - capital M
+        /*let*/ stringTest = "I am the very model of a modern major general";
+        stringTest = stringTest.toUpperCase();
+        /*let*/ indexOfM = stringTest.indexOf("M");
+        console.log(indexOfM);
+        // Instruction 19 - Performed in the browser
+
+        // Instruction 20 - lastIndexOf
+        let start = stringTest.indexOf("MODEL");
+        let end = stringTest.lastIndexOf('MAJOR');
+        console.log(start);
+        console.log(end);
+
+        // Instruction 21 - substring
+        let subStr = stringTest.substring(start, end);
+        console.log(subStr);
+
+        // Instruction 22 - document.write
+        document.write("<p>" + subStr + "</p>");
+
+    </script>
+</body>
+</html>

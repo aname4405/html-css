@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Functions - variable scope and the call stack</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /* 1 - implicit global scope */
+
+        function test() {
+           flag = true;
+
+            console.log(flag);
+            test1();
+            console.log(flag);
+        }
+
+        function test1() {
+            flag = false;
+            return
+        }
+
+        test();
+
+
+    </script>
+
+    <script type="text/javascript">
+        ///* 2 - explicit global scope */
+        //let flag = true;
+
+        //function test() {
+        //    console.log(flag);
+        //    test1();
+        //    console.log(flag);
+        //}
+
+        //function test1() {
+        //    flag = false;
+        //    return
+        //}
+
+        //test();
+
+
+    </script>
+    <script type="text/javascript">
+        /* 3- understanding local scope */
+
+
+        //function test() {
+        //    let flag = true;
+        //    console.log(flag);
+        //    test1();
+        //    console.log(flag);
+        //}
+
+        //function test1() {
+        //    flag = false;
+        //    return
+        //}
+
+        //test();
+
+
+    </script>
+    <script type="text/javascript">
+        /* 4 -  param passing */
+
+
+        //function test() {
+        //    let flag = true;
+        //    console.log(flag);
+        //    flag = test1();
+        //    console.log(flag);
+        //}
+
+        //function test1(param) {
+        //    param = false;
+        //    return param;
+        //}
+
+        //test();
+
+
+    </script>
+
+
+
+
+</body>
+</html>

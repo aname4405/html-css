@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex09 - Part 1 - Adding New Content</title>
+    <style type="text/css">
+        #placeholder { width: 75%; height: auto; margin: 0 auto 0 auto; padding: 0.5em;  border: 2px dashed red;}
+        p{ font-family: Verdana; text-align: center;}  
+    </style>
+</head>
+<body>
+    <div id="placeholder"></div>
+    
+    <script>
+        let colours = ['red', 'green', 'blue', 'orange', 'lime','olive', 'black', 'yellow'];
+
+        // // Instructions 1 - 7
+        // function buildP(placeholder, num) {
+        
+        //     let p = document.createElement('p');
+        //     let text = document.createTextNode(`Have you tried turning it off and back on again?`);
+
+        //     p.appendChild(text);
+        //     placeholder.appendChild(p);
+        // }
+
+        // buildP(document.querySelector('#placeholder'));
+
+        // Instructions 8 - 12
+        function buildP(placeholder, num) {
+            
+            let i = 0;
+
+            do {
+                let p = document.createElement('p');
+                let text = document.createTextNode(`Have you tried turning it off and back on again?`);
+
+                // Instruction 13
+                p.style.color = colours[parseInt(Math.random() * colours.length)];
+                //
+                p.appendChild(text);
+                placeholder.appendChild(p);
+                i++;
+            } while (i < num);
+        }
+
+        buildP(document.querySelector('#placeholder'), 6);
+    </script>
+</body>
+</html>

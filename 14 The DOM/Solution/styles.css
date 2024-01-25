@@ -1,0 +1,21 @@
+#imageOfTheDay {
+    position: absolute;
+    width: 580px;
+}
+
+#caption {
+    background-color: rgba(20, 70, 10, 0.3);
+    text-align: center;
+    font-family: Verdana, Arial, Tahoma, Sans-Serif;
+    font-size: 0.85em;
+    height: 20px;
+}
+
+button {
+    background-color: rgba(20, 70, 10, 0.3);
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(20, 70, 10, 0.8);
+}

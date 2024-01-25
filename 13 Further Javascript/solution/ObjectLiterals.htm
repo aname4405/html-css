@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Object Literals</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let objStudent = new Object();
+
+        objStudent["name"] = "Harry Potter";
+        objStudent["address"] = "4 Privet Drive";
+        objStudent["email"] = "hp@hogwarts.ac.uk";
+        objStudent.schoolHouse = "Gryffindor"; //expando property
+
+        for (let key in objStudent) {
+            console.log(key + " : " + objStudent[key]);
+        }
+
+
+        let theClass = [];
+        theClass[0] = objStudent;
+        theClass[1] = { name: "Draco Malfoy", address: "Malfoy Manor", email: "dm@hogwarts.ac.uk", schoolHouse: "Slytherin" };
+
+
+        for (let i = 0; i < theClass.length; i++) {
+            for (let k in theClass[i])
+                console.log(k + " :: " + theClass[i][k]);
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

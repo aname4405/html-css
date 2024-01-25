@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Training Venues</title>
+</head>
+<style>
+    iframe {
+        display: block;
+        margin: 3em auto;
+        width: 80%;
+        min-height: 400px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="QA Corporate Logo">
+        <h1 style="background-image:url(images/trainingCourses.jpg); padding: 4em 1em; color: white; background-size: cover">Our Training Courses</h1>
+    </header>
+
+    <!-- create table here -->
+    <table>
+        <caption>A sample of our courses</caption>
+        <thead>
+            <tr>
+                <th>Course Title</th>
+                <th>Subject Area</th>
+                <th>Length</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="courses/aws.html" target="courseContainer">AWS Technical Essentials</a></td>
+                <td>Technical IT</td>
+                <td>1 day</td>
+                <td>£495</td>
+            </tr>
+
+            <tr>
+                <td><a href="courses/cloud.html" target="courseContainer">Configuring and Deploying a Private Cloud</a></td>
+                <td>Technical IT</td>
+                <td>5 days</td>
+                <td>£2066</td>
+            </tr>
+
+            <tr>
+                <td><a href="courses/prince2.html" target="courseContainer">PRINCE2 Foundation</a></td>
+                <td>Project Management</td>
+                <td>2 days</td>
+                <td>£898</td>
+            </tr>
+
+            <tr>
+                <td><a href="courses/virtual.html" target="courseContainer">Brilliant Virtual Delivery</a></td>
+                <td>Leadership & Management</td>
+                <td>2 days</td>
+                <td>£1362</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- end table here -->
+
+    <!-- create iframe here -->
+    <iframe name="courseContainer"></iframe>
+</body>
+
+</html>

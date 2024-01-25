@@ -1,0 +1,40 @@
+@media only screen and (min-width: 768px) {
+    nav li {
+        display: inline-block;
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1026px) {
+    
+    nav li {
+        width: auto;
+    }
+    
+    nav ul {
+        padding: 0;
+    }
+    
+    nav {
+        float: right;
+        width: 70%;
+    }
+    
+    h1 {
+       clear: both;
+    }
+    
+    header img {
+        display: inline-block;
+        max-width: 30%;
+    }
+    
+    main > article.grid {
+    background-color: #f1f1f1;
+    float: left;
+    margin: 1%;
+    width: 48%;
+    height: 300px;
+    overflow-y: scroll;
+}
+}
